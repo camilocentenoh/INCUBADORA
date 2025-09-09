@@ -1,37 +1,83 @@
+/* Fuente moderna desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background: #000000;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #f1ff72, #fdbf12);
     color: #333;
 }
 
+/* Encabezado con degradado */
 header {
-    background: #ff3e3e;
-    color: white;
-    padding: 15px;
     text-align: center;
-    border-radius: 10px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-h1, h2 {
-    color: #000000;
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-section {
-    background: rgb(255, 255, 255);
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+header .subtitulo {
+    font-size: 1.2em;
+    opacity: 0.9;
 }
 
+/* Secciones tipo tarjeta */
+main {
+    max-width: 900px;
+    margin: 40px auto;s
+    padding: 0 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Títulos */
+h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Listas */
 ul {
-    line-height: 1.6;
+    line-height: 1.8;
+    padding-left: 20px;
 }
 
+/* Links */
+a {
+    color: #f14d4d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    margin-top: 20px;
+    padding: 15px;
+    background: #5e6eff;
+    color: white;
     font-size: 0.9em;
-    color: #777;
+    margin-top: 40px;
 }
