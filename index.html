@@ -8,34 +8,35 @@
 </head>
 <body>
     <header>
-        <h1>🐣 Proyecto: Incubadora</h1>
-       
+        <h1>🐣 Proyecto: Incubadora Inteligente</h1>
+        <p class="subtitulo">Control automático de temperatura y humedad</p>
     </header>
 
     <main>
+        <!-- Semana 1 -->
         <section class="card">
             <h2>👥 Integrantes y Roles</h2>
             <ul>
-                <li><strong>Camilo Centeno</strong> – Líder técnico</li>
-                <li><strong>Juan Carrillo</strong> – Líder documental</li>
+                <li><strong>Camilo centeno</strong> – Líder técnico</li>
+                <li><strong>Juan carrillo</strong> – Líder documental</li>
             </ul>
         </section>
 
         <section class="card">
             <h2>📖 Justificación</h2>
             <p>
-                El proyecto de incubadora busca optimizar el proceso de incubación de huevos, 
+                El proyecto de incubadora inteligente busca optimizar el proceso de incubación de huevos, 
                 garantizando condiciones adecuadas de temperatura y humedad para mejorar la tasa de éxito. 
-                El uso de sensores permitirá automatizar el control ambiental, reduciendo errores humanos 
-                y mejorando la eficiencia.
+                El uso de un sensor DHT22 permitirá medir las variables ambientales, mientras que un 
+                microcontrolador Arduino se encargará del procesamiento de datos.
             </p>
         </section>
 
         <section class="card">
-            <h2>🔧 Posibles Sensores a Emplear</h2>
+            <h2>🔧 Sensor a Emplear</h2>
             <ul>
                 <li><strong>DHT22:</strong> Sensor de temperatura y humedad ambiente.</li>
-                <li><strong>DS18B20:</strong> Sensor digital de temperatura de alta precisión.</li>
+                  <li><strong>DS18B20:</strong> Sensor digital de temperatura de alta precisión.</li>
                 <li><strong>HDC1080:</strong> Sensor de humedad y temperatura de bajo consumo.</li>
             </ul>
         </section>
@@ -43,19 +44,43 @@
         <section class="card">
             <h2>📚 Referencias Bibliográficas</h2>
             <ul>
-                
-                <li>Maxim Integrated. (2015). <em>DS18B20 Programmable Resolution 1-Wire Digital Thermometer</em>. Recuperado de 
-                    <a href="https://datasheets.maximintegrated.com/en/ds/DS18B20.pdf" target="_blank">maximintegrated.com</a>
+
+                <li>Arduino. (2023). <em>Arduino UNO Rev3</em>. Recuperado de 
+                    <a href="https://store.arduino.cc/products/arduino-uno-rev3" target="_blank">arduino.cc</a>
                 </li>
-                <li>Texas Instruments. (2016). <em>HDC1080 Low Power, High Accuracy Digital Humidity Sensor</em>. Recuperado de 
-                    <a href="https://www.ti.com/lit/ds/symlink/hdc1080.pdf" target="_blank">ti.com</a>
+                <li>App Inventor. (2023). <em>MIT App Inventor</em>. Recuperado de 
+                    <a href="https://appinventor.mit.edu/" target="_blank">appinventor.mit.edu</a>
                 </li>
             </ul>
+        </section>
+
+        <!-- Semana 2 -->
+        <section class="card">
+            <h2>📊 Diseño del Sistema (Semana 2)</h2>
+            <p>
+                El sistema se basa en un <strong>Arduino UNO</strong> que recibe datos de un 
+                <strong>sensor DHT22</strong> (temperatura y humedad). Estos datos se envían 
+                mediante un módulo <strong>Bluetooth HC-05</strong> a una aplicación desarrollada 
+                en <strong>App Inventor</strong>, permitiendo al usuario monitorear las condiciones 
+                de la incubadora desde su teléfono.
+            </p>
+
+            <h3>Diagrama de Bloques</h3>
+            <img src="./Captura.PNG"  style="max-width:100%; border-radius:15px; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
+
+            <h3>Justificación</h3>
+            <p>
+                Se eligió <strong>Bluetooth</strong> como medio de comunicación porque permite 
+                una conexión sencilla y directa entre el Arduino y el teléfono móvil sin necesidad 
+                de Internet.  
+                Además, se empleará <strong>App Inventor</strong> como plataforma para la aplicación, 
+                ya que facilita el diseño de apps educativas y de prototipado rápido en dispositivos Android.
+            </p>
         </section>
     </main>
 
     <footer>
-        <p>Publicado en GitHub Pages - Semana 1 🌐</p>
+        <p>Publicado en GitHub Pages - Semana 2 🌐</p>
     </footer>
 </body>
 </html>
